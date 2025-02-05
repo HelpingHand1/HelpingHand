@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealHunt - Daily Deals & Coupons</title>
+  <style>
+    /* --- Basic Reset and Body Styles --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      line-height: 1.6;
+    }
+    /* --- Header & Navigation --- */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* --- Hero Section --- */
+    .hero {
+      background: url('https://via.placeholder.com/1200x300?text=Daily+Deals') no-repeat center center/cover;
+      height: 300px;
+    }
+    /* --- Main Container --- */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+    /* --- Deals Section --- */
+    .deals {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .deal-card {
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 15px;
+      width: calc(33% - 30px);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .deal-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .deal-card h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+    .deal-card p {
+      flex-grow: 1;
+      color: #555;
+    }
+    .deal-card a {
+      text-decoration: none;
+      background: #28a745;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      display: block;
+      margin-top: 10px;
+    }
+    /* --- Responsive Design --- */
+    @media (max-width: 768px) {
+      .deal-card {
+        width: calc(50% - 30px);
+      }
+    }
+    @media (max-width: 500px) {
+      .deal-card {
+        width: 100%;
+      }
+    }
+    /* --- Footer --- */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <h1>DealHunt</h1>
+    <p>Your daily source for the best deals and coupons!</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Coupons</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Image -->
+  <div class="hero"></div>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- Deals Section -->
+    <section class="deals">
+      <!-- Deal Card 1 -->
+      <div class="deal-card">
+        <img src="https://via.placeholder.com/300x200?text=Electronics+Deal" alt="Electronics Deal" />
+        <h3>50% off on Electronics</h3>
+        <p>Grab the best deals on top electronics brands. Limited time offer!</p>
+        <!-- Replace the href below with your affiliate URL -->
+        <a href="https://www.example.com/affiliate-link" target="_blank">Shop Now</a>
+      </div>
+      <!-- Deal Card 2 -->
+      <div class="deal-card">
+        <img src="https://via.placeholder.com/300x200?text=Fashion+Deal" alt="Fashion Deal" />
+        <h3>Buy 1 Get 1 Free on Fashion</h3>
+        <p>Exclusive fashion deals for the season. Don’t miss out on this offer.</p>
+        <a href="https://www.example.com/affiliate-link" target="_blank">Shop Now</a>
+      </div>
+      <!-- Deal Card 3 -->
+      <div class="deal-card">
+        <img src="https://via.placeholder.com/300x200?text=Home+Appliances" alt="Home Appliances Deal" />
+        <h3>30% off on Home Appliances</h3>
+        <p>Upgrade your home with the best appliances at discounted prices.</p>
+        <a href="https://www.example.com/affiliate-link" target="_blank">Shop Now</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DealHunt. All rights reserved.</p>
+    <!-- Future Integration: Google AdSense or other ad network scripts go here -->
+  </footer>
+
+  <!-- Optional JavaScript for Future Enhancements -->
+  <script>
+    // In a real-world scenario, you might fetch live deal data via an API here
+    // and dynamically populate the .deals section.
+  </script>
+</body>
+</html>
